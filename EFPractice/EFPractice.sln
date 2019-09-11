@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirstProject", "DBFirstProject\DBFirstProject.csproj", "{A80559D2-B030-488B-8B8B-EDEA396090BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstProject", "CodeFirstProject\CodeFirstProject.csproj", "{8F76C96F-633C-4770-9568-567E60A93902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GunelEF", "GunelEF\GunelEF.csproj", "{B7C32D12-07BD-4337-B160-AC83E9FB9713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A80559D2-B030-488B-8B8B-EDEA396090BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A80559D2-B030-488B-8B8B-EDEA396090BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A80559D2-B030-488B-8B8B-EDEA396090BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F76C96F-633C-4770-9568-567E60A93902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F76C96F-633C-4770-9568-567E60A93902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F76C96F-633C-4770-9568-567E60A93902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F76C96F-633C-4770-9568-567E60A93902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C32D12-07BD-4337-B160-AC83E9FB9713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C32D12-07BD-4337-B160-AC83E9FB9713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C32D12-07BD-4337-B160-AC83E9FB9713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C32D12-07BD-4337-B160-AC83E9FB9713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -61,6 +61,10 @@ namespace DBFirstProject
             txtTitle.Text = "";
             rtxtContent.Text = "";
             cbxCategory.SelectedIndex = -1;
+
+            btnSave.Visible = true;
+            btnDelete.Visible = false;
+            btnUpdate.Visible = false;
         }
 
         public void FillGridView()
@@ -140,6 +144,23 @@ namespace DBFirstProject
 
             ResetForm();
             FillGridView();
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Silmek isteyirsiniz mi?", "Silme", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                db.News.Remove(selectedNews);
+                db.SaveChanges();
+
+                ResetForm();
+                FillGridView();
+
+                MessageBox.Show("Silme ugurlu oldu");
+            }
+
+            
         }
     }
 }
