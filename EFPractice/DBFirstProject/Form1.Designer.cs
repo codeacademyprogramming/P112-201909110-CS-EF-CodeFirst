@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.dgvNews = new System.Windows.Forms.DataGridView();
@@ -98,17 +98,18 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Kateqoriya";
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(172, 439);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSave.Location = new System.Drawing.Point(172, 439);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(133, 29);
+            this.btnSave.TabIndex = 6;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.Button1_Click);
             // 
             // btnDelete
             // 
@@ -132,6 +133,7 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Visible = false;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // dgvNews
             // 
@@ -152,6 +154,7 @@
             this.dgvNews.Name = "dgvNews";
             this.dgvNews.Size = new System.Drawing.Size(554, 450);
             this.dgvNews.TabIndex = 9;
+            this.dgvNews.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvNews_RowHeaderMouseDoubleClick);
             // 
             // Id
             // 
@@ -197,7 +200,6 @@
             this.ClientSize = new System.Drawing.Size(889, 479);
             this.Controls.Add(this.dgvNews);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -205,6 +207,7 @@
             this.Controls.Add(this.rtxtContent);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnSave);
             this.Name = "Form1";
             this.Text = "XƏBƏRLƏR";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -222,7 +225,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dgvNews;
